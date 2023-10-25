@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index2</title>
+    <script src="/js/jquery-3.7.0.min.js"></script>
+    <script>
+    $(function(){
+       
+        let step1 = $("#step1");
+     
+        $("ul#prduct>li").click(
+            function(){
+                
+              let step2= $(this).appendTo("#step2");
+           
+              step2.show();
+              step1.hide();
+               
+          
+
+            });
+
+
+    });
+
+
+
+    </script>
+
+
+    <style>
+        div#productimg img {width: 150px;height: 150px;}
+        div#step2 {border: 5px solid black;}
+
+    </style>
+</head>
+<body>
+    <div id="step1">
+    <ul id="prduct">
+        <li>
+            <img src="/images/img1.jpg"  class="food" alt="상품1"/>
+            
+        </li>
+        <li><img src="/images/img2.jpg"  class="food" alt="상품2"/></li>
+        <li><img src="/images/img3.jpg"  class="food" alt="상품3"/></li>
+        <li><img src="/images/img4.jpg"  class="food" alt="상품4"/></li>
+        <li><img src="/images/img5.jpg"  class="food" alt="상품5"/></li>
+    </ul>
+    </div>
+    <div id="step2">
+      
+    </div>
+
+   
+</body>
+</html>
